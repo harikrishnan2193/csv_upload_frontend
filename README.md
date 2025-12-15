@@ -44,9 +44,6 @@ A modern **Next.js** application for uploading and processing CSV files with rea
 ---
 
 ## 📁 Project Structure
-
-```
-
 csv-bulk-upload-frontend/
 ├── app/
 │   ├── layout.tsx            # Root layout
@@ -56,8 +53,6 @@ csv-bulk-upload-frontend/
 ├── lib/
 │   └── api.ts                # API helper functions
 └── package.json
-
-````
 
 ---
 
@@ -216,38 +211,11 @@ npm start
 * Session recovery
 * Memory-optimized CSV parsing
 
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch
-
-   ```bash
-   git checkout -b feature/new-feature
-   ```
-3. Commit changes
-
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. Push to branch
-
-   ```bash
-   git push origin feature/new-feature
-   ```
-5. Open Pull Request
-
----
-
 ## 📄 License
 
 MIT License
 
 ---
 
-## 🔗 Related Projects
-
-* CSV Bulk Upload Backend
-* API Documentation
-
+## Backend Integration
+Backend Repository: **https://github.com/harikrishnan2193/csv_upload_frontend**
