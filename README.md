@@ -8,7 +8,7 @@ A modern **Next.js** application for uploading and processing CSV files with rea
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Dual Upload Modes**
   - CSV file upload
@@ -34,7 +34,7 @@ A modern **Next.js** application for uploading and processing CSV files with rea
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Next.js 16.0.3** (App Router)
 - **TypeScript**
@@ -43,7 +43,7 @@ A modern **Next.js** application for uploading and processing CSV files with rea
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 csv-bulk-upload-frontend/
 ├── app/
 │   ├── layout.tsx            # Root layout
@@ -56,7 +56,7 @@ csv-bulk-upload-frontend/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Clone Repository
 ```bash
@@ -72,7 +72,7 @@ npm install
 
 ---
 
-## 🔧 Environment Setup
+##  Environment Setup
 
 Create a `.env.local` file:
 
@@ -82,7 +82,7 @@ NEXT_PUBLIC_API_URL=http://localhost:1337
 
 ---
 
-## ▶️ Run Development Server
+##  Run Development Server
 
 ```bash
 npm run dev
@@ -96,7 +96,7 @@ http://localhost:3000
 
 ---
 
-## 🔗 Backend Integration
+##  Backend Integration
 
 Backend Repository: **CSV Bulk Upload Backend**
 
@@ -111,7 +111,7 @@ POST /api/upload/large-file          # Upload large files
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 
 ### CSV Upload Flow
 
@@ -143,7 +143,7 @@ Backend confirmation
 
 ---
 
-## 🧠 Session Management
+##  Session Management
 
 * Auto-detect interrupted uploads
 * Resume active upload jobs
@@ -151,7 +151,7 @@ Backend confirmation
 
 ---
 
-## 🎨 User Interface
+##  User Interface
 
 ### Main Components
 
@@ -170,7 +170,7 @@ Backend confirmation
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -180,14 +180,14 @@ NEXT_PUBLIC_API_URL=http://localhost:1337
 
 ---
 
-## 📂 Supported Files
+##  Supported Files
 
 * **CSV Mode**: `.csv` files only
 * **Large File Mode**: Any file type (1GB+ optimized)
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Production Build
 
@@ -204,14 +204,14 @@ npm start
 
 ---
 
-## ⚡ Performance Features
+##  Performance Features
 
 * Chunked uploads for large files
 * Non-blocking progress tracking
 * Session recovery
 * Memory-optimized CSV parsing
 
-## 📄 License
+##  License
 
 MIT License
 
