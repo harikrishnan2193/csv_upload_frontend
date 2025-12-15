@@ -1,5 +1,55 @@
 import axios from "axios";
 
+
+// upload function in lib
+export const uploadLargeFileWithProgress = async (
+  file: File,
+  onProgress: (progress: { percentage: number; uploadedBytes: number; totalBytes: number; status: string }) => void
+) => {
+  const baseURL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+  const formData = new FormData();
+  formData.append("file", file);
+  
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    
+    xhr.upload.addEventListener("progress", (event) => {
+      if (event.lengthComputable) {
+        const percentage = Math.round((event.loaded / event.total) * 100);
+        onProgress({
+          percentage,
+          uploadedBytes: event.loaded,
+          totalBytes: event.total,
+          status: "uploading"
+        });
+      }
+    });
+    
+    xhr.addEventListener("load", () => {
+      if (xhr.status === 200) {
+        onProgress({
+          percentage: 100,
+          uploadedBytes: file.size,
+          totalBytes: file.size,
+          status: "completed"
+        });
+        resolve(JSON.parse(xhr.responseText));
+      } else {
+        reject(new Error("Upload failed"));
+      }
+    });
+    
+    xhr.addEventListener("error", () => {
+      reject(new Error("Upload failed"));
+    });
+    
+    xhr.open("POST", `${baseURL}/api/upload/large-file`);
+    xhr.send(formData);
+  });
+};
+
+
+
 const api = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337",
   headers: {
