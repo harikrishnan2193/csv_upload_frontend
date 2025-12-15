@@ -219,3 +219,13 @@ MIT License
 
 ## Backend Integration
 Backend Repository: **https://github.com/harikrishnan2193/csv_upload_strapi_backend**
+
+---
+
+##  Screenshots
+
+### Large File Upload
+![Large File Upload](./screenshots/large-file-upload.png)
+*Large file upload with real-time progress monitoring*
+
+---
