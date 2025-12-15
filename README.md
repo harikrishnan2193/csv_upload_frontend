@@ -218,4 +218,4 @@ MIT License
 ---
 
 ## Backend Integration
-Backend Repository: **https://github.com/harikrishnan2193/csv_upload_frontend**
+Backend Repository: **https://github.com/harikrishnan2193/csv_upload_strapi_backend**
